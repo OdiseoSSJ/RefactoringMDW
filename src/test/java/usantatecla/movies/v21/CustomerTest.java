@@ -7,9 +7,6 @@ import org.junit.Test;
 public class CustomerTest {
 
 	private final String movieName = "movieName";
-	private final String regularMovieName = "regularMovieName";
-	private final String newReleaseMovieName = "newReleaseMovieName";
-	private final String childrenMovieName = "childrenMovieName";
 	private final String customerName = "customerName";
 
 	@Test
@@ -143,12 +140,15 @@ public class CustomerTest {
 	
 	@Test
 	public void rentalTest() {
+		String regularMovieName = "regularMovieName";
 		Movie regularMovie = new MovieBuilder().title(regularMovieName).regularBuild();
 		Rental regularRental = new RentalBuilder().movie(regularMovie).daysRented(10).build();
 
+		String newReleaseMovieName = "newReleaseMovieName";
 		Movie newReleaseMovie = new MovieBuilder().title(newReleaseMovieName).newReleaseBuild();
 		Rental newReleaseRental = new RentalBuilder().movie(newReleaseMovie).daysRented(10).build();
 
+		String childrenMovieName = "childrenMovieName";
 		Movie childrensMovie = new MovieBuilder().title(childrenMovieName).childrensBuild();
 		Rental childrensRental = new RentalBuilder().movie(childrensMovie).daysRented(10).build();
 

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15090ddf-ac60-419d-b407-4d025e8356de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="15090ddf-ac60-419d-b407-4d025e8356de" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +117,7 @@
       <updated>1617903989071</updated>
       <workItem from="1617903993008" duration="757000" />
       <workItem from="1618059952884" duration="1632000" />
-      <workItem from="1618071748145" duration="1329000" />
+      <workItem from="1618071748145" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1618060012725</created>
@@ -198,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618072833300</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add fields of movie names">
+      <created>1618083752897</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618083752897</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add fields of customer names">
+      <created>1618083831365</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618083831365</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +240,8 @@
     <MESSAGE value="Add ChildrenMovie" />
     <MESSAGE value="Colapse Price into Movie" />
     <MESSAGE value="Fixed error with NewReleaseMovie::getFrequentRenterPoints method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed error with NewReleaseMovie::getFrequentRenterPoints method" />
+    <MESSAGE value="Add fields of movie names" />
+    <MESSAGE value="Add fields of customer names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fields of customer names" />
   </component>
 </project>
