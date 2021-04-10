@@ -2,9 +2,9 @@ package usantatecla.movies.v21;
 
 public class Rental {
 
-	private Movie movie;
+	private final Movie movie;
 	
-	private int daysRented;
+	private final int daysRented;
 	
 	public Rental(Movie movie, int daysRented) {
 		this.movie = movie;
@@ -16,7 +16,7 @@ public class Rental {
 	}
 	
 	public int getFrequentRenterPoints() {
-		return movie.getFrequentRenterPoints(daysRented);
+		return movie.getFrequentRenterPoints();
 	}
 	
 	public int getDaysRented() {
