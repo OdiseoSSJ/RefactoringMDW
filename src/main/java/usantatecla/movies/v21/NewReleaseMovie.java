@@ -19,7 +19,7 @@ public class NewReleaseMovie extends Movie{
         if (daysRented > NewReleaseMovie.DAYS_RENTED_THRESHOLD) {
             return NewReleaseMovie.FREQUENT_RENTER_POINTS;
         } else {
-            return super.getFrequentRenterPoints();
+            return super.getFrequentRenterPoints(daysRented);
         }
     }
 }

@@ -12,9 +12,9 @@ public abstract class Movie {
 	
 	public abstract double getCharge(int daysRented);
 	
-	public int getFrequentRenterPoints(){
+	public int getFrequentRenterPoints(int daysRented){
 		return Movie.FREQUENT_RENTER_POINTS;
-	};
+	}
 	
 	public String getTitle() {
 		return title;
