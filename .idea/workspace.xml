@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618061051091</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Delete dependency of Movie in Customer">
+      <created>1618063046909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618063046909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,12 +191,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Config archives" />
     <MESSAGE value="Fixed README.md for a proper view of UML" />
     <MESSAGE value="Git config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git config" />
+    <MESSAGE value="Delete dependency of Movie in Customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete dependency of Movie in Customer" />
   </component>
 </project>
