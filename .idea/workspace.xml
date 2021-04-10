@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15090ddf-ac60-419d-b407-4d025e8356de" name="Default Changelist" comment="" />
+    <list default="true" id="15090ddf-ac60-419d-b407-4d025e8356de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/usantatecla/movies/v21/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/usantatecla/movies/v21/CustomerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +48,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="JUnit.CustomerTest">
+  <component name="RunManager" selected="JUnit.CustomerTest.withoutRentalsTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -117,7 +119,7 @@
       <updated>1617903989071</updated>
       <workItem from="1617903993008" duration="757000" />
       <workItem from="1618059952884" duration="1632000" />
-      <workItem from="1618071748145" duration="1710000" />
+      <workItem from="1618071748145" duration="2059000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1618060012725</created>
@@ -210,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618083831365</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed YAGNI principle">
+      <created>1618084007083</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618084007083</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +251,7 @@
     <MESSAGE value="Fixed error with NewReleaseMovie::getFrequentRenterPoints method" />
     <MESSAGE value="Add fields of movie names" />
     <MESSAGE value="Add fields of customer names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add fields of customer names" />
+    <MESSAGE value="Fixed YAGNI principle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed YAGNI principle" />
   </component>
 </project>

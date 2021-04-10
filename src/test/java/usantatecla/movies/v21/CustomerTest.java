@@ -1,5 +1,8 @@
 package usantatecla.movies.v21;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -11,14 +14,14 @@ public class CustomerTest {
 
 	@Test
 	public void withoutRentalsTest() {
-		String customerName = "customerName";
 		Customer customer = new CustomerBuilder().name(customerName).build();
 
 		String statement = customer.statement();
 
 		String result = new StatementBuilder().customerName(customerName)
 				.totalAmount(0).frequentRenterPoints(0).build();
-		assertEquals(result, statement);
+
+		assertThat(statement, is(equalTo(result)));
 	}
 
 	@Test
