@@ -39,8 +39,7 @@ public class Customer {
 		double result = 0;
 		Iterator<Rental> rentals = this.rentals.iterator();
 		while (rentals.hasNext()) {
-			Rental each = rentals.next();
-			result += each.getCharge();
+			result += rentals.next().getCharge();
 		}
 		return result;
 	}
@@ -49,8 +48,7 @@ public class Customer {
 		int result = 0;
 		Iterator<Rental> rentals = this.rentals.iterator();
 		while (rentals.hasNext()) {
-			Rental each = rentals.next();
-			result += each.getFrequentRenterPoints();
+			result += rentals.next().getFrequentRenterPoints();
 		}
 		return result;
 	}
