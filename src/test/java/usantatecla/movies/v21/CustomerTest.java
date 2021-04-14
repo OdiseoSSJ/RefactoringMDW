@@ -12,6 +12,14 @@ public class CustomerTest {
 	private final String movieName = "movieName";
 	private final String customerName = "customerName";
 
+	private String amount(int amount){
+		return "Amount owed is " + amount;
+	}
+
+	private String frequentRenterPoints(int points){
+		return "You earned " + points + " frequent renter points";
+	}
+
 	@Test
 	public void withoutRentalsTest() {
 		Customer customer = new CustomerBuilder().name(customerName).build();
@@ -21,7 +29,10 @@ public class CustomerTest {
 		String result = new StatementBuilder().customerName(customerName)
 				.totalAmount(0).frequentRenterPoints(0).build();
 
-		assertThat(statement, is(equalTo(result)));
+		assertThat(statement.contains(customerName), is(equalTo(result.contains(customerName))));
+		assertThat(statement.contains(amount(0)), is(equalTo(result.contains(amount(0)))));
+		assertThat(statement.contains(frequentRenterPoints(0)),
+				is(equalTo(result.contains(frequentRenterPoints(0)))));
 	}
 
 	@Test
@@ -34,7 +45,12 @@ public class CustomerTest {
 
 		String result = new StatementBuilder().customerName(customerName).movie(movieName, 2)
 				.totalAmount(2).frequentRenterPoints(1).build();
-		assertEquals(result, statement);
+
+		assertThat(statement.contains(customerName), is(equalTo(result.contains(customerName))));
+		assertThat(statement.contains(movieName), is(equalTo(result.contains(movieName))));
+		assertThat(statement.contains(amount(2)), is(equalTo(result.contains(amount(2)))));
+		assertThat(statement.contains(frequentRenterPoints(1)),
+				is(equalTo(result.contains(frequentRenterPoints(1)))));
 	}
 	
 	@Test
