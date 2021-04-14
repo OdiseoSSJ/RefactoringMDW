@@ -208,18 +208,25 @@ public class CustomerTest {
 		Rental newReleaseRental = new RentalBuilder().movie(newReleaseMovie).daysRented(10).build();
 
 		String childrenMovieName = "childrenMovieName";
-		Movie childrensMovie = new MovieBuilder().title(childrenMovieName).childrensBuild();
-		Rental childrensRental = new RentalBuilder().movie(childrensMovie).daysRented(10).build();
+		Movie childrenMovie = new MovieBuilder().title(childrenMovieName).childrensBuild();
+		Rental childrenRental = new RentalBuilder().movie(childrenMovie).daysRented(10).build();
 
 		Customer customer = new CustomerBuilder().name(customerName)
-				.rental(regularRental).rental(newReleaseRental).rental(childrensRental).build();
+				.rental(regularRental).rental(newReleaseRental).rental(childrenRental).build();
 
 		String statement = customer.statement();
 
 		String result = new StatementBuilder().customerName(customerName)
 				.movie(regularMovieName, 14).movie(newReleaseMovieName, 3).movie(childrenMovieName, 15)
 				.totalAmount(32).frequentRenterPoints(4).build();
-		assertEquals(result, statement);
+
+		assertThat(statement.contains(customerName), is(equalTo(result.contains(customerName))));
+		assertThat(statement.contains(regularMovieName), is(equalTo(result.contains(regularMovieName))));
+		assertThat(statement.contains(newReleaseMovieName), is(equalTo(result.contains(newReleaseMovieName))));
+		assertThat(statement.contains(childrenMovieName), is(equalTo(result.contains(childrenMovieName))));
+		assertThat(statement.contains(amount(32)), is(equalTo(result.contains(amount(32)))));
+		assertThat(statement.contains(frequentRenterPoints(4)),
+				is(equalTo(result.contains(frequentRenterPoints(4)))));
 	}
 	
 	
