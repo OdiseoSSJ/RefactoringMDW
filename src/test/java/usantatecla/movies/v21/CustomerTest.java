@@ -12,7 +12,7 @@ public class CustomerTest {
 	private final String movieName = "movieName";
 	private final String customerName = "customerName";
 
-	private String amount(int amount){
+	private String amount(double amount){
 		return "Amount owed is " + amount;
 	}
 
@@ -81,7 +81,12 @@ public class CustomerTest {
 
 		String result = new StatementBuilder().customerName(customerName).movie(movieName, 3.5)
 				.totalAmount(3.5).frequentRenterPoints(1).build();
-		assertEquals(result, statement);
+
+		assertThat(statement.contains(customerName), is(equalTo(result.contains(customerName))));
+		assertThat(statement.contains(movieName), is(equalTo(result.contains(movieName))));
+		assertThat(statement.contains(amount(3.5)), is(equalTo(result.contains(amount(3.5)))));
+		assertThat(statement.contains(frequentRenterPoints(1)),
+				is(equalTo(result.contains(frequentRenterPoints(1)))));
 	}
 	
 	@Test
